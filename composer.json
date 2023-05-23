@@ -1,0 +1,49 @@
+{
+    "name": "everapi/fxapi-php",
+    "description": "A PHP wrapper for the fxapi.com API",
+    "keywords": [
+        "fxapi.com",
+        "fxapi-php",
+        "exchange rates",
+        "api",
+        "fx api",
+        "foreign exchange rates",
+        "foreign exchange rates API",
+        "exchange rates data",
+        "rates API"
+    ],
+    "homepage": "https://github.com/everapihq/fxapi-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dominik Kukacka",
+            "email": "office@everapi.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "pestphp/pest": "^1.20",
+        "spatie/ray": "^1.28"
+    },
+    "autoload": {
+        "psr-4": {
+            "FxApi\\FxApi\\": "src"
+        }
+    },
+    "scripts": {
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
